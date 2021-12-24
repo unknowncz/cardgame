@@ -1,4 +1,10 @@
-import random,time,termcolor
+import random,time
+try:import termcolor
+except:
+    import subprocess
+    import sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", 'termcolor'])
+    import termcolor
 class deck:
     def __init__(self,cards):self.cards=cards
     def shuffle(self,*overflow):self.cards=random.sample(self.cards,len(self.cards))
