@@ -7,7 +7,7 @@ class deck:
         try:
             if card[0]in self.cards:self.selected=card[0]
             else:print('Card not in deck')
-        except IndexError:pass
+        except IndexError:print('You must select a card')
     def checknext(self):
         try:
             if self.selected in self.cards:
