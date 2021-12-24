@@ -29,7 +29,7 @@ def main():
         while True:
             if Deck.checknext():break
             time.sleep(1)
-    def passingfunc(*overflow):pass
+    def passingfunc(*overflow):print('Not a valid command')
     def end(*overflow):return True
 
     commands={
