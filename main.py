@@ -51,7 +51,7 @@ def main():
         except KeyboardInterrupt:exit()
         if commands.get(s.split(' ')[0],passingfunc)(s.split(' ')[1:]or['']):break
     Deck.sort()
-    print(*Deck.cards)
+    print(*Deck.cards[::-1])
     input()
 
 if __name__=='__main__':main()
