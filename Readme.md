@@ -2,7 +2,7 @@
 
 ## !shuffle ##
 
-Shuffles the deck of cards regardless wether it was already shuffled or not.¨
+Shuffles the deck of cards regardless wether it was already shuffled or not.
 
 Usage: !shuffle
 
