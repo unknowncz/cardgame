@@ -3,7 +3,7 @@ try:import termcolor
 except:
     import subprocess
     import sys
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'termcolor'])
+    subprocess.check_call([sys.executable,"-m","pip","install",'termcolor'])
     import termcolor
 class deck:
     def __init__(self,cards):self.cards=cards
