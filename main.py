@@ -8,7 +8,7 @@ except:
 class deck:
     def __init__(self,cards):self.cards=cards
     def shuffle(self,*overflow):self.cards=random.sample(self.cards,len(self.cards))
-    def sort(self,*overflow):self.cards.sort()
+    def sort(self,*overflow):self.cards.sort(key=int)
     def selectcard(self,card,*overflow):
         try:
             if card[0]in self.cards:self.selected=card[0]
